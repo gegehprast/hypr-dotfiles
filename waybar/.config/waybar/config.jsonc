@@ -7,8 +7,12 @@
     "custom/launcher": {
         "interval": "once",
         "format": "󰣇",
-        "tooltip": true,
-        "tooltip-format": "App Launcher"
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+      "on-scroll-up": "hyprctl dispatch workspace prev",
+      "on-scroll-down": "hyprctl dispatch workspace next"
     },
 
     "clock": {
