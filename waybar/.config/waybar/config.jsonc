@@ -1,8 +1,36 @@
 {
+    "margin-top": 0,
+    "margin-left": 120,
+    "margin-bottom": 0,
+    "margin-right": 120,
+    "height": 60,
+    "layer": "top",
     "position": "top",
-    "modules-left": ["custom/launcher", "hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["network", "pulseaudio", "battery", "clock"],
+    "output": "DP-2",
+    "spacing": 15,
+    "modules-left": ["custom/launcher", "clock", "clock#date"],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["pulseaudio", "network", "battery", "custom/powermenu"],
+
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
 
     "custom/launcher": {
         "interval": "once",
@@ -10,43 +38,72 @@
         "tooltip": false
     },
 
-    "hyprland/workspaces": {
-      "on-scroll-up": "hyprctl dispatch workspace prev",
-      "on-scroll-down": "hyprctl dispatch workspace next"
+    "backlight": {
+        "device": "nvidia_0",
+        "max-length": "4",
+        "format": "{icon}",
+        "tooltip-format": "{percent}%",
+        "format-icons": ["", "", "", "", "", "", ""]
     },
 
-    "clock": {
-        "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "memory": {
+        "interval": 30,
+        "format": "  {}%",
+        "format-alt": " {used:0.1f}G",
+        "max-length": 10
     },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-bluetooth-muted": "婢  muted",
+        "format-muted": "婢 muted",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": " {signalStrength}%",
+        "format-disconnected": "󰤭"
+    },
+
     "battery": {
+        "bat": "BAT0",
+        "adapter": "ADP0",
+        "interval": 60,
         "states": {
             "warning": 30,
             "critical": 15
         },
-        "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-        "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-        "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-        "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-        "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-        "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-        "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-        "format-icons": ["", "", "", "", ""],
-        "tooltip-format": "{time}"
+        "max-length": 10,
+        "format": "{icon} {capacity}%",
+        "format-warning": "{icon} {capacity}%",
+        "format-critical": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {capacity}%",
+        "format-full": " 100%",
+        "format-icons": ["", "", "", "", "", "", "", "", "", ""]
     },
-    "network": {
-        "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-        "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-        "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+
+    "clock": {
+        "format": " {:%H:%M}"
     },
-    "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-muted": "",
-        "format-icons": {
-            "default": ["", "", " "]
-        },
-        "on-click": "pavucontrol"
+
+    "clock#date": {
+        "format": " {:%A, %B %d, %Y}"
+    },
+
+    "custom/powermenu": {
+        "format": "",
+        "tooltip": false
     }
 }
