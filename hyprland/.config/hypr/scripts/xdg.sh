@@ -6,3 +6,7 @@ killall xdg-desktop-portal
 sleep 4
 /usr/lib/xdg-desktop-portal &
 sleep 4
+
+# Fix for dolphin not showing apps on open with 
+# first, install: sudo pacman -S archlinux-xdg-menu
+XDG_MENU_PREFIX=arch- kbuildsycoca6
