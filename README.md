@@ -1,1 +1,1 @@
-paru -S hyprlock hypridle starship rofi-wayland yazi
+paru -S --needed hyprlock hypridle starship rofi-wayland yazi zoxide dolphin
