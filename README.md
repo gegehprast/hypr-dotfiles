@@ -14,7 +14,7 @@ ttf-nerd-fonts-symbols-mono \
 pnpm \
 nvim \
 dunst \
-swww \
+swww 
 
 # Dolphin fix
 
@@ -30,13 +30,13 @@ pavucontrol \
 wireplumber \
 libdbusmenu-gtk3 \
 playerctl \
-swww \
+swww 
 
 # illogical-impulse-backlight
 
 paru -S --needed \
 brightnessctl \
-ddcutil \
+ddcutil 
 
 # illogical-impulse-basic
 
@@ -56,7 +56,7 @@ npm \
 meson \
 typescript \
 gjs \
-xdg-user-dirs \
+xdg-user-dirs 
 
 # illogical-impulse-bibata-modern-classic-bin
 
@@ -80,7 +80,7 @@ fish \
 foot \
 starship \
 kvantum \
-kvantum-qt5 \
+kvantum-qt5 
 
 # illogical-impulse-gnome
 
@@ -89,7 +89,7 @@ polkit-gnome \
 gnome-keyring \
 gnome-control-center \
 blueberry \
-networkmanager \
+networkmanager 
 
 # illogical-impulse-gtk
 
@@ -102,7 +102,7 @@ gobject-introspection \
 upower \
 yad \
 ydotool \
-xdg-user-dirs-gtk \
+xdg-user-dirs-gtk 
 
 # illogical-impulse-hyprland
 
@@ -117,7 +117,7 @@ hyprlock \
 xdg-desktop-portal-hyprland \
 hyprcursor \
 hyprwayland-scanner \
-hyprland \
+hyprland 
 
 # illogical-impulse-microtex-git
 
@@ -132,7 +132,7 @@ paru -S --needed illogical-impulse-oneui4-icons-git
 paru -S --needed \
 xdg-desktop-portal \
 xdg-desktop-portal-gtk \
-xdg-desktop-portal-hyprland \
+xdg-desktop-portal-hyprland 
 
 # illogical-impulse-python
 
@@ -144,7 +144,7 @@ libadwaita \
 libsoup3 \
 libportal-gtk4 \
 gobject-introspection \
-sassc \
+sassc 
 
 # illogical-impulse-screencapture
 
@@ -154,7 +154,7 @@ wf-recorder \
 grim \
 tesseract \
 tesseract-data-eng \
-slurp \
+slurp 
 
 # illogical-impulse-widgets
 
@@ -166,4 +166,4 @@ hyprlock \
 wlogout \
 wl-clipboard \
 hyprpicker \
-nm-connection-editor \
+nm-connection-editor 
