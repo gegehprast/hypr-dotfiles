@@ -12,5 +12,6 @@ ttf-jetbrains-mono-nerd \
 ttf-firacode-nerd \
 ttf-nerd-fonts-symbols-mono \
 pnpm \
-nvim
-
+nvim \
+dunst \
+swww \
