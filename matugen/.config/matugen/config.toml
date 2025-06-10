@@ -1,7 +1,5 @@
-[config.wallpaper]
-command = "swww"
-arguments = ["img", "--transition-type", "center"]
-set = true
+[config]
+version_check = false
 
 [templates.m3colors]
 input_path = '~/.config/matugen/templates/colors.json'
@@ -26,6 +24,7 @@ output_path = '~/.config/gtk-4.0/gtk.css'
 [templates.kde_colors]
 input_path = '~/.config/matugen/templates/kde/color.txt'
 output_path = '~/.local/state/mineminemine/user/generated/color.txt'
+post_hook = '~/.config/matugen/templates/kde/kde-material-you-colors-wrapper.sh'
 
 [templates.wallpaper]
 input_path = '~/.config/matugen/templates/wallpaper.txt'
