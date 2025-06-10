@@ -21,11 +21,11 @@ output_path = '~/.config/gtk-3.0/gtk.css'
 input_path = '~/.config/matugen/templates/gtk/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
 
+[templates.wallpaper]
+input_path = '~/.config/matugen/templates/wallpaper.txt'
+output_path = '~/.local/state/mineminemine/user/generated/wallpaper/path.txt'
+
 [templates.kde_colors]
 input_path = '~/.config/matugen/templates/kde/color.txt'
 output_path = '~/.local/state/mineminemine/user/generated/color.txt'
 post_hook = '~/.config/matugen/templates/kde/kde-material-you-colors-wrapper.sh'
-
-[templates.wallpaper]
-input_path = '~/.config/matugen/templates/wallpaper.txt'
-output_path = '~/.local/state/mineminemine/user/generated/wallpaper/path.txt'
