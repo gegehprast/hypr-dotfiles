@@ -109,7 +109,7 @@ hyprland-qtutils \
 hyprlock \
 hyprcursor \
 hyprwayland-scanner \
-hyprland
+hyprland \
 xdg-desktop-portal-hyprland
 
 # illogical-impulse-kde
@@ -117,7 +117,8 @@ xdg-desktop-portal-hyprland
 paru -S --needed \
 polkit-kde-agent \
 gnome-keyring \
-networkmanager better-control-git
+networkmanager \
+better-control-git
 
 # illogical-impulse-microtex-git
 
