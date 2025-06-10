@@ -14,7 +14,7 @@ ttf-nerd-fonts-symbols-mono \
 pnpm \
 nvim \
 dunst \
-swww 
+swww
 
 # Dolphin fix
 
@@ -22,21 +22,19 @@ paru -S archlinux-xdg-menu
 XDG_MENU_PREFIX=arch- kbuildsycoca6
 sudo ln -s /etc/xdg/menus/plasma-applications.menu /etc/xdg/menus/applications.menu
 
-
 # illogical-impulse-audio
 
 paru -S --needed \
 pavucontrol \
 wireplumber \
 libdbusmenu-gtk3 \
-playerctl \
-swww 
+playerctl
 
 # illogical-impulse-backlight
 
 paru -S --needed \
 brightnessctl \
-ddcutil 
+ddcutil
 
 # illogical-impulse-basic
 
@@ -47,16 +45,13 @@ coreutils \
 cliphist \
 cmake \
 curl \
-fuzzel \
 rsync \
 wget \
 ripgrep \
 jq \
-npm \
 meson \
-typescript \
 gjs \
-xdg-user-dirs 
+xdg-user-dirs
 
 # illogical-impulse-bibata-modern-classic-bin
 
@@ -87,7 +82,7 @@ polkit-gnome \
 gnome-keyring \
 gnome-control-center \
 blueberry \
-networkmanager 
+networkmanager
 
 # illogical-impulse-gtk
 
@@ -100,7 +95,7 @@ gobject-introspection \
 upower \
 yad \
 ydotool \
-xdg-user-dirs-gtk 
+xdg-user-dirs-gtk
 
 # illogical-impulse-hyprland
 
@@ -112,10 +107,17 @@ hypridle \
 hyprland-qt-support \
 hyprland-qtutils \
 hyprlock \
-xdg-desktop-portal-hyprland \
 hyprcursor \
 hyprwayland-scanner \
-hyprland 
+hyprland
+xdg-desktop-portal-hyprland
+
+# illogical-impulse-kde
+
+paru -S --needed \
+polkit-kde-agent \
+gnome-keyring \
+networkmanager better-control-git
 
 # illogical-impulse-microtex-git
 
@@ -130,7 +132,7 @@ paru -S --needed illogical-impulse-oneui4-icons-git
 paru -S --needed \
 xdg-desktop-portal \
 xdg-desktop-portal-gtk \
-xdg-desktop-portal-hyprland 
+xdg-desktop-portal-hyprland
 
 # illogical-impulse-python
 
@@ -142,17 +144,38 @@ libadwaita \
 libsoup3 \
 libportal-gtk4 \
 gobject-introspection \
-sassc 
+sassc
 
 # illogical-impulse-screencapture
 
 paru -S --needed \
 swappy \
 wf-recorder \
-grim \
+hyprshot \
 tesseract \
 tesseract-data-eng \
-slurp 
+slurp
+
+# illogical-impulse-toolkit
+paru -S --needed \
+kdialog \
+qt6-5compat  \
+qt6-base \
+qt6-declarative \
+qt6-imageformats \
+qt6-multimedia \
+qt6-positioning \
+qt6-quicktimeline \
+qt6-sensors \
+qt6-svg \
+qt6-tools \
+qt6-translations \
+qt6-virtualkeyboard \
+qt6-wayland \
+syntax-highlighting \
+upower \
+wtype \
+ydotool
 
 # illogical-impulse-widgets
 
@@ -164,4 +187,5 @@ hyprlock \
 wlogout \
 wl-clipboard \
 hyprpicker \
-nm-connection-editor 
+nm-connection-editor \
+swww
