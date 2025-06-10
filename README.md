@@ -66,21 +66,19 @@ paru -S --needed illogical-impulse-bibata-modern-classic-bin
 
 paru -S --needed \
 adw-gtk-theme-git \
-qt5ct \
-qt6ct \
-qt5-wayland \
+breeze-plus \
+eza \
+fish \
 fontconfig \
+kde-material-you-colors \
+kitty \
+matugen-bin \
+starship \
 ttf-readex-pro \
 ttf-jetbrains-mono-nerd \
 ttf-material-symbols-variable-git \
-ttf-space-mono-nerd \
 ttf-rubik-vf \
-ttf-gabarito-git \
-fish \
-foot \
-starship \
-kvantum \
-kvantum-qt5 
+ttf-gabarito-git
 
 # illogical-impulse-gnome
 
