@@ -133,7 +133,7 @@ ForegroundPositive=#00e479
 ForegroundVisited=#ebb2ff
 
 [DirSelect Dialog]
-DirSelectDialog Size=848,575
+DirSelectDialog Size=848,580
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa8\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
@@ -185,4 +185,3 @@ activeForeground=226,226,233
 inactiveBackground=62,68,87
 inactiveBlend=161,169,177
 inactiveForeground=220,226,249
-
