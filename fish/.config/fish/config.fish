@@ -72,3 +72,8 @@ alias pp=pnpm
 # zoxide
 zoxide init --cmd cd fish | source
 # zoxide end
+
+alias hy=hyprland
+alias hyc=hyprctl
+alias nmi=nmcli
+alias wp=wpctl
