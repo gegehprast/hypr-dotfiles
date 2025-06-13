@@ -74,6 +74,6 @@ zoxide init --cmd cd fish | source
 # zoxide end
 
 alias hy=hyprland
-alias hyc=hyprctl
+alias hyy=hyprctl
 alias nmi=nmcli
 alias wp=wpctl
