@@ -15,7 +15,8 @@ pnpm \
 nvim \
 dunst \
 swww \
-aylurs-gtk-shell
+aylurs-gtk-shell \
+hyprpolkitagent
 
 # Dolphin fix
 
@@ -76,15 +77,6 @@ ttf-material-symbols-variable-git \
 ttf-rubik-vf \
 ttf-gabarito-git
 
-# illogical-impulse-gnome
-
-paru -S --needed \
-polkit-gnome \
-gnome-keyring \
-gnome-control-center \
-blueberry \
-networkmanager
-
 # illogical-impulse-gtk
 
 paru -S --needed \
@@ -124,10 +116,6 @@ better-control-git
 # illogical-impulse-microtex-git
 
 paru -S --needed illogical-impulse-microtex-git
-
-# illogical-impulse-oneui4-icons-git
-
-paru -S --needed illogical-impulse-oneui4-icons-git
 
 # illogical-impulse-portal
 
@@ -186,8 +174,6 @@ dart-sass \
 hypridle \
 hyprutils \
 hyprlock \
-wlogout \
 wl-clipboard \
 hyprpicker \
-nm-connection-editor \
-swww
+nm-connection-editor
