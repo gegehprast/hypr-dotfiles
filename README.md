@@ -14,7 +14,8 @@ ttf-nerd-fonts-symbols-mono \
 pnpm \
 nvim \
 dunst \
-swww
+swww \
+aylurs-gtk-shell
 
 # Dolphin fix
 
