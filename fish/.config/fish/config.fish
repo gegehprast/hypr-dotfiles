@@ -1,5 +1,10 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
+# run uwsm compositor selecion menu on tty login
+if uwsm check may-start && uwsm select
+	exec uwsm start default
+end
+
 # overwrite greeting
 # potentially disabling fastfetch
 # function fish_greeting
