@@ -1,5 +1,5 @@
 configuration{
-    modi: "run,window,combi";
+    modi: "drun,window,clipboard:~/.config/rofi/scripts/cliphist-rofi-img,run,combi";
     icon-theme: "Oranchelo";
     show-icons: true;
     terminal: "alacritty";
@@ -7,9 +7,13 @@ configuration{
     location: 0;
     disable-history: false;
     hide-scrollbar: true;
+    display-drun: " 🏃‍➡️  Drun ";
     display-combi: " 🖥️  All ";
     display-run: " 🏃  Run ";
     display-window: " 🪟  Window";
+    display-clipboard: " 📋 Clipboard";
     sidebar-mode: true;
+    hover-select: true;
+    kb-mode-previous: "Super+ISO_Left_Tab";
+    kb-mode-next: "Super+Tab";
 }
-
