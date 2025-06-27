@@ -7,9 +7,9 @@ end
 
 # overwrite greeting
 # potentially disabling fastfetch
-# function fish_greeting
-# 	ascii-image-converter ~/.config/fish/logo.png -C -d 50,19 | fastfetch --file-raw -
-# end
+function fish_greeting
+	ascii-image-converter ~/.config/fish/logo.png -C -d 46,26 | fastfetch --file-raw -
+end
 
 set -U fish_color_normal "#b9b1bc" # default color
 set -U fish_color_command "#c488fb" # commands like echo
@@ -48,7 +48,9 @@ set -U fish_pager_color_secondary_description "#b9b1bc" # description of every s
 set -gx EDITOR code
 #EDITOR end
 
+# Starship
 starship init fish | source
+# Starship end
 
 # yazi
 function y
@@ -70,14 +72,14 @@ set -gx PNPM_HOME "/home/gegeh/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
 	set -gx PATH "$PNPM_HOME" $PATH
 end
-
-alias pp=pnpm
 # pnpm end
 
 # zoxide
 zoxide init --cmd cd fish | source
 # zoxide end
 
+# aliases
+alias pp=pnpm
 alias hy=hyprland
 alias hyy=hyprctl
 alias nmi=nmcli
