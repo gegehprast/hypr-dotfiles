@@ -1,14 +1,19 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 # run uwsm compositor selecion menu on tty login
-if uwsm check may-start && uwsm select
-	exec uwsm start default
+# if uwsm check may-start && uwsm select
+#     exec uwsm start default
+# end
+
+# launch hyprland on tty login
+if uwsm check may-start
+    exec uwsm start hyprland-uwsm.desktop
 end
 
 # overwrite greeting
 # potentially disabling fastfetch
 function fish_greeting
-	ascii-image-converter ~/.config/fish/logo.png -C -d 46,26 | fastfetch --file-raw -
+    ascii-image-converter ~/.config/fish/logo.png -C -d 46,26 | fastfetch --file-raw -
 end
 
 set -U fish_color_normal "#b9b1bc" # default color
@@ -54,12 +59,12 @@ starship init fish | source
 
 # yazi
 function y
-	set tmp (mktemp -t "yazi-cwd.XXXXXX")
-	yazi $argv --cwd-file="$tmp"
-	if read -z cwd < "$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-		builtin cd -- "$cwd"
-	end
-	rm -f -- "$tmp"
+    set tmp (mktemp -t "yazi-cwd.XXXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if read -z cwd <"$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        builtin cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
 end
 # yazi end
 
@@ -70,7 +75,7 @@ fzf --fish | source
 # pnpm
 set -gx PNPM_HOME "/home/gegeh/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-	set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
 
