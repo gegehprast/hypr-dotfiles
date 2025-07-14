@@ -39,6 +39,8 @@ libadwaita \
 breeze-plus \
 adw-gtk-theme \
 kvantum \
+qt6ct \
+qt5ct \
 playerctl \
 brightnessctl \
 ddcutil \
