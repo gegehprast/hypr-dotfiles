@@ -36,7 +36,7 @@ bibata-cursor-theme-bin \
 papirus-icon-theme \
 libadwaita \
 breeze-plus \
-adw-gtk-theme-git \
+adw-gtk-theme \
 playerctl \
 brightnessctl \
 ddcutil \
