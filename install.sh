@@ -38,6 +38,7 @@ papirus-icon-theme \
 libadwaita \
 breeze-plus \
 adw-gtk-theme \
+kvantum \
 playerctl \
 brightnessctl \
 ddcutil \
