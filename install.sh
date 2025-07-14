@@ -59,5 +59,6 @@ matugen-bin \
 eza \
 better-control-git \
 nm-connection-editor \
+zen-brwoser-bin \
 visual-studio-code-bin \
 aylurs-gtk-shell \
