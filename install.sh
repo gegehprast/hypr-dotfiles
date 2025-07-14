@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 paru -S --needed \
+uwsm \
 hyprshot \
 hyprutils \
 hyprpicker \
