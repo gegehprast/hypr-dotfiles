@@ -59,6 +59,8 @@ swww \
 kitty \
 matugen-bin \
 eza \
+swappy \
+gwenview \
 better-control-git \
 nm-connection-editor \
 zen-brwoser-bin \
