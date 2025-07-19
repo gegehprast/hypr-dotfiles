@@ -1,5 +1,5 @@
 configuration{
-    modi: "drun,window,clipboard:~/.config/rofi/scripts/cliphist-rofi-img,run,combi";
+    modi: "drun,window,run,combi";
     icon-theme: "Oranchelo";
     show-icons: true;
     terminal: "alacritty";
