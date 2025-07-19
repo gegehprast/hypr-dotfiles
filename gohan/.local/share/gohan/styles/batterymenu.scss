@@ -1,0 +1,23 @@
+@use "./colors.scss" as *;
+
+box.BatteryMenu {
+    button.ProfileButton {
+        label {
+            color: $primary;
+        }
+
+        &.Active {
+            label {
+                text-decoration: underline;
+            }
+        }
+        
+        &:not(.Active) {
+            &:hover {
+                label {
+                    color: $primary_fixed;
+                }
+            }
+        }
+    }
+}

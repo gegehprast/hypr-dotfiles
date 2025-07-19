@@ -1,0 +1,15 @@
+@use "./colors.scss" as *;
+
+window.PopoverMenu {
+    background: transparent;
+    padding-top: 0.2rem;
+
+    .Container {
+        min-height: 24px;
+        background: $background;
+        color: $primary;
+        padding: 0.2rem 0.5rem;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}

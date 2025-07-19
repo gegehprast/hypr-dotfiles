@@ -1,0 +1,153 @@
+window {
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.4rem 1rem 0.6rem 0.5rem;
+}
+
+button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+separator {
+  min-width: 0.15rem;
+  background-color: rgba(133, 115, 108, 0.2);
+}
+
+.icon {
+  font-family: "Symbols Nerd Font Mono", monospace;
+  font-size: 16px;
+}
+
+.shadow {
+  box-shadow: 0.3rem 0.3rem 0 0 rgb(32, 28, 0);
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.bordered {
+  border: 0.1rem solid rgb(78, 71, 27);
+}
+
+.debug {
+  background-color: red;
+  color: green;
+}
+
+window.PopoverMenu {
+  background: transparent;
+  padding-top: 0.2rem;
+}
+window.PopoverMenu .Container {
+  min-height: 24px;
+  background: rgb(255, 248, 246);
+  color: rgb(142, 77, 47);
+  padding: 0.2rem 0.5rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+window.Bar {
+  background: transparent;
+}
+window.Bar .Container {
+  min-height: 24px;
+  background: rgb(255, 248, 246);
+  color: rgb(142, 77, 47);
+  padding: 0.2rem 0.5rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+window.Bar .Container .Launcher button:hover {
+  color: rgb(255, 219, 205);
+}
+window.Bar .Container .Launcher button label {
+  font-size: 20px;
+}
+window.Bar .Container .Workspaces .WorkspaceButton {
+  color: rgb(255, 181, 150);
+}
+window.Bar .Container .Workspaces .WorkspaceButton.Occupied {
+  color: rgb(142, 77, 47);
+}
+window.Bar .Container .Workspaces .WorkspaceButton.Focused {
+  color: rgb(142, 77, 47);
+}
+window.Bar .Container .Workspaces .WorkspaceButton.Focused > label {
+  text-decoration: underline;
+}
+window.Bar .Container .Workspaces .WorkspaceButton:hover {
+  color: rgb(255, 219, 205);
+}
+window.Bar .Container box.Tray menubutton.TrayMenuButton label.TrayLabelIcon {
+  font-size: 14px;
+}
+window.Bar .Container box.Tray menubutton.TrayMenuButton image.TrayImageIcon {
+  min-width: 16px;
+}
+
+box.BatteryMenu button.ProfileButton label {
+  color: rgb(142, 77, 47);
+}
+box.BatteryMenu button.ProfileButton.Active label {
+  text-decoration: underline;
+}
+box.BatteryMenu button.ProfileButton:not(.Active):hover label {
+  color: rgb(255, 219, 205);
+}
+
+box.VolumeMenu button.SpeakerButton label {
+  color: rgb(142, 77, 47);
+}
+box.VolumeMenu button.SpeakerButton.Active label {
+  text-decoration: underline;
+}
+box.VolumeMenu button.SpeakerButton:not(.Active):hover label {
+  color: rgb(255, 219, 205);
+}
+
+window.NotificationPopup {
+  background: transparent;
+  padding-top: 0.2rem;
+}
+
+box.NotificationItem {
+  color: rgb(142, 77, 47);
+  background-color: rgb(255, 248, 246);
+  min-width: 300px;
+  padding: 0rem 0.5rem;
+}
+box.NotificationItem box.Header {
+  border-bottom: 1px solid rgb(78, 71, 27);
+}
+box.NotificationItem box.Header box.HeaderRight label.HeaderTime {
+  font-size: 14px;
+}
+box.NotificationItem box.Header box.HeaderRight button.CloseButton label {
+  font-size: 20px;
+}
+box.NotificationItem box.Body {
+  min-height: 50px;
+}
+box.NotificationItem box.Body label.Summary {
+  font-size: 14px;
+  font-weight: 600;
+}
+box.NotificationItem box.Body label.Body {
+  font-size: 13px;
+}
+box.NotificationItem box.Footer {
+  min-height: 1px;
+}
+box.NotificationItem.Critical {
+  background-color: rgb(142, 77, 47);
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=styles.css.map */
