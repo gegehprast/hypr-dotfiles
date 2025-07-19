@@ -32,3 +32,7 @@ output_path = '~/.config/qt6ct/colors/matugen.conf'
 [templates.gohan]
 input_path = '~/.config/matugen/templates/gohan/colors.scss'
 output_path = '~/.local/share/gohan/styles/colors.scss'
+
+[templates.bangohan]
+input_path = '~/.config/matugen/templates/bangohan/colors.scss'
+output_path = '~/.local/share/bangohan/styles/colors.scss'
