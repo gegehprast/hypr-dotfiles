@@ -63,6 +63,6 @@ swappy \
 gwenview \
 better-control-git \
 nm-connection-editor \
-zen-brwoser-bin \
+zen-browser-bin \
 visual-studio-code-bin \
 aylurs-gtk-shell \
