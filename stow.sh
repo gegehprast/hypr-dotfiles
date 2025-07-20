@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+stow config/
+stow cursors/
+stow fastfetch/
+stow fcitx5/
+stow fish/
+stow fontconfig/
+stow gohan/
+stow gtk-2.0/
+stow gtk-3.0/
+stow gtk-4.0/
+stow hyprland/
+stow kitty/
+stow Kvantum/
+stow matugen/
+stow qt5ct/
+stow qt6ct/
+stow rofi/
+stow starship/
+stow uwsm/
+stow xdg-desktop-portal/
+stow xsettingsd/
+stow yazi/
